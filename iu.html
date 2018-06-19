@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iu</title>
+
+	<link rel="stylesheet" href="./w3.css">
+	<link rel="stylesheet" type="text/css" href="./iucss.css">
+	<link rel="stylesheet" type="text/css" href="./normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	
+	<meta charset="utf-8">
+	<meta name="iu" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<nav></nav>
+<div class="main">
+	<img class="ic01" src="./ic01.png">
+	<img class="bg_01" src="./bg01.png">
+	<img class="iu" src="./iu.png">
+	<img class="logo" src="./iulogo.png">
+	<img class="concert" src="./concert.png">
+
+</div>
+<div class="cont01">
+	<img class="iu01" src="./iu01.jpg">
+	<img class="td" src="./tourdate.png">
+	<div class="td_text">
+		<ul>
+			<li><em>2019.11.20</em> 부산 백스코 오디토리움       <em class="bt1">Buy Tickets</em></li>
+			<li><em>2019.12.07</em> 광주 유니버시아드 체조경기장 <em class="bt2">Buy Tickets</em></li>
+			<li><em>2019.12.14</em> 청주 석우석 문화체육관       <em class="bt3">Buy Tickets</em></li>
+			<li><em>2019.12.30</em> 서울 잠실 실내체육관         <em class="bt4">Buy Tickets</em></li>
+			<li><em>2019.12.31</em> 서울 잠실 실내체육관         <em class="bt4">Buy Tickets</em></li>
+		</ul>
+	</div>
+</div>	
+<div class="cont02">
+	<iframe width="1520" height="900" src="https://www.youtube.com/embed/bYuLUk0OTjY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="cont03">
+	<div class="w3-content w3-display-container">
+	<div class="w3-display-container mySlides">
+	 <img class="silde sl01" src="./iu02.jpg">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	 <img class="silde sl02" src="./iu03.jpg">
+	</div>
+
+	<div class="w3-display-container mySlides">
+	  <img class="silde sl03" src="./iu04.jpg">
+	</div>
+
+	<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+	</div>
+</div>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+</body>
+</html>

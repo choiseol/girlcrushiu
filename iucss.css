@@ -1,0 +1,52 @@
+
+
+div.main{max-width: 1366px; background: white;}
+.bg_01,.iu,.logo,.concert{position: absolute; }
+img.bg_01{left:10%; top:10px; z-index:-10; width: 99%;
+		  animation-name: lip;
+		  animation-duration: 4s;}
+img.iu{left: 43%; top:15%; width: 10%;
+		animation-name: iu;
+		animation-duration: 2s;}
+img.logo{width: 56%; left: 23%; top: 16%;
+		 animation-name: logo;
+		 animation-duration: 7s;}
+img.concert{left: 80%; top: 650px;
+			animation-name: con;
+		    animation-duration: 4s;}
+img.ic01{left: 5%; top:5%; position: fixed;}
+
+div.cont01{background:#6e0808; top: 800px; height: 768px;position:relative;z-index:-2;}
+img.iu01{top:0px; position:absolute; z-index: -1;}
+.td{width:15%; left: 40%; top: 350px; position: relative;}
+.td_text{top: 380px; left: 34.5%; position: relative;}
+.td_text li{margin-bottom: 18px; list-style: none; font-size: 1.4em; color: #bd8b94;}
+em{ font-style: normal;font-family:'Oswald', sans-serif; margin: 50px;  color: white;}
+.bt1{margin-left: 300px;}
+.bt2{margin-left: 300px;}
+.bt3{margin-left: 300px;}
+.bt4{margin-left: 300px;}
+
+
+iframe{position: relative; top:800px; float: left;}
+.cont03{position: relative; top:799px;}
+.w3-display-container{left: -138px;}
+.silde{width: 1550px; }
+/* animation */
+@keyframes lip {    
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes con {    
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes iu {    
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes logo {    
+	0%{opacity: 0;}
+	25%{opacity: 0;}
+	to{opacity: 1;}
+}
